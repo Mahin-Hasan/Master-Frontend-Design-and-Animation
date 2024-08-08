@@ -2,6 +2,16 @@
   font-family: NeueHass;
   src: url("/NeueHaasDisplayMediu.ttf");
 }
+@font-face {
+  font-family: NeueHass;
+  font-weight: 100;
+  src: url("/NeueHaasDisplayLight.ttf");
+}
+@font-face {
+  font-family: NeueHass;
+  font-weight: 200;
+  src: url("/NeueHaasDisplayRoman.ttf");
+}
 
 * {
   margin: 0;
@@ -169,6 +179,7 @@ nav {
   width: 100%;
   background-color: #efeae3;
   padding: 8vw 0;
+  position: relative;
 }
 .con {
   white-space: nowrap;
@@ -177,7 +188,6 @@ nav {
   animation-duration: 10s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-
 }
 #moving-text {
   white-space: nowrap;
@@ -205,4 +215,48 @@ nav {
   to {
     transform: translateX(-100%);
   }
+}
+
+/* Page 2 Bottom */
+
+#page2-bottom {
+  height: 80vh;
+  width: 100%;
+  padding: 4.5vw;
+  /* background-color: lightpink; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 9;
+}
+#page2-bottom h1 {
+  font-size: 4vw;
+  line-height: 4vw;
+  width: 60%;
+}
+#bottom-part2 {
+  width: 20%;
+}
+#bottom-part2 img {
+  width: 100%;
+  border-radius: 15px;
+}
+#bottom-part2 p {
+  width: 100%;
+  font-weight: 200;
+  border-radius: 15px;
+  margin-top: 2vw;
+  font-size: 1vw;
+}
+
+#page2 #bouncy{
+  height: 30vw;
+  width: 30vw;
+  position: absolute;
+  top: 58%;
+  left: 25%;
+  border-radius: 50%;
+  filter: blur(20px);
+  background-color: #fe3e0e;
 }
