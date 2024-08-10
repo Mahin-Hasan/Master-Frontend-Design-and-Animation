@@ -19,6 +19,7 @@
   box-sizing: border-box;
   font-family: NeueHass;
 }
+
 html,
 body {
   height: 100%;
@@ -276,10 +277,9 @@ nav {
 }
 /* Page 3 */
 #page3 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   padding: 4vw 0;
-
   background-color: #efeae3;
 }
 .item {
@@ -309,4 +309,20 @@ nav {
 }
 .item:hover .overlay {
   top: 0;
+}
+
+#item-container{
+ /* background-color: burlywood;  */
+}
+#fixed-image{
+  height: 30vw;
+  width: 24vw;
+  border-radius: 10px;
+  position: fixed;
+  left: 50%;
+  top: 25%;
+  z-index: 10;
+  display: none;
+  background-size: cover;
+  background-position: center;
 }
