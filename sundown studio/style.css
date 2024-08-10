@@ -117,7 +117,7 @@ nav {
   width: 46vw;
   height: 36vw;
   right: 0;
-  top: 65vh;
+  top: 68vh;
 }
 #hero-1 {
   width: 100%;
@@ -223,7 +223,6 @@ nav {
   height: 80vh;
   width: 100%;
   padding: 4.5vw;
-  /* background-color: lightpink; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -250,13 +249,64 @@ nav {
   font-size: 1vw;
 }
 
-#page2 #bouncy{
-  height: 30vw;
-  width: 30vw;
+#page2 #bouncy {
+  height: 32vw;
+  width: 32vw;
   position: absolute;
   top: 58%;
   left: 25%;
   border-radius: 50%;
   filter: blur(20px);
-  background-color: #fe3e0e;
+  background: linear-gradient(to top right, #ff2d03, #ff5c0b);
+  animation-name: bouncy;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+@keyframes bouncy {
+  from {
+    transform: translate(10%, -10%) skew(0);
+    filter: blur(20px);
+  }
+  to {
+    transform: translate(-10%, 8%) skew(-12deg);
+    filter: blur(30px);
+  }
+}
+/* Page 3 */
+#page3 {
+  height: 100vh;
+  width: 100%;
+  padding: 4vw 0;
+
+  background-color: #efeae3;
+}
+.item {
+  height: 150px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 2vw;
+  /* border-top:1px solid black; */
+  border-bottom: 1px solid #9f9f9f;
+  overflow: hidden;
+}
+.item h2 {
+  font-size: 3vw;
+  position: relative;
+  z-index: 9;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: orange;
+  position: absolute;
+  left: 0;
+  top: -100%;
+  transition: all ease 0.2s;
+}
+.item:hover .overlay {
+  top: 0;
 }
