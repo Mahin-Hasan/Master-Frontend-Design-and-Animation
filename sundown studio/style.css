@@ -20,6 +20,11 @@
   font-family: NeueHass;
 }
 
+#main {
+  /* background-color: black; */
+  position: relative;
+  z-index: 10;
+}
 html,
 body {
   height: 100%;
@@ -289,7 +294,6 @@ nav {
   display: flex;
   align-items: center;
   padding: 0 2vw;
-  /* border-top:1px solid black; */
   border-bottom: 1px solid #9f9f9f;
   overflow: hidden;
 }
@@ -311,10 +315,7 @@ nav {
   top: 0;
 }
 
-#item-container{
- /* background-color: burlywood;  */
-}
-#fixed-image{
+#fixed-image {
   height: 30vw;
   width: 24vw;
   border-radius: 10px;
@@ -325,4 +326,44 @@ nav {
   display: none;
   background-size: cover;
   background-position: center;
+}
+/* page 4 add later */
+
+/* Page 5 */
+
+#page4 {
+  height: 60vh;
+  width: 100%;
+  background-color: #efeae3;
+}
+#page5 {
+  height: 100vh;
+  width: 100%;
+}
+
+#footer {
+  position: fixed;
+  z-index: 9; /* bx main z index 10 */
+  height: 105vh;
+  width: 100%;
+  bottom: 0;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 1vw 3vw;
+}
+#footer h1{
+  font-size: 23vw;
+}
+#footer-top {
+  height: 20vh;
+  width: 100%;
+  background-color: antiquewhite;
+}
+#footer-bottom {
+  border-top: 1px solid #dadada;;
+  height: 10vh;
+  width: 100%;
 }
