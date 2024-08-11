@@ -57,12 +57,13 @@ function menuAnimation() {
     }
   });
 }
+function loaderAnimation() {
+  var loader = document.querySelector("#loader");
+  setTimeout(function () {
+    loader.style.top = "-100%";
+  }, 4200);
+}
 swiperAnimation();
 page4Animation();
 menuAnimation();
-
-
-var loader = document.querySelector('#loader')
-setTimeout(function(){
-  loader.style.top='-100%'
-},4200)
+loaderAnimation();
