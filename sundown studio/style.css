@@ -322,20 +322,33 @@ nav {
   position: fixed;
   left: 50%;
   top: 25%;
-  z-index: 10;
+  z-index: 16;
   display: none;
   background-size: cover;
   background-position: center;
 }
+/* Swiper code */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 30%;
+  border-left: 1px solid #aeadad;
+  padding: 0vw 2vw;
+
+}
+
 /* page 4 add later */
-
-/* Page 5 */
-
 #page4 {
-  height: 60vh;
+  height: 70vh;
   width: 100%;
   background-color: #efeae3;
+  padding: 10vw 2vw;
 }
+/* Page 5 */
+
 #page5 {
   height: 100vh;
   width: 100%;
@@ -354,7 +367,7 @@ nav {
   flex-direction: column;
   padding: 1vw 3vw;
 }
-#footer h1{
+#footer h1 {
   font-size: 23vw;
 }
 #footer-top {
@@ -363,7 +376,7 @@ nav {
   background-color: antiquewhite;
 }
 #footer-bottom {
-  border-top: 1px solid #dadada;;
+  border-top: 1px solid #dadada;
   height: 10vh;
   width: 100%;
 }
