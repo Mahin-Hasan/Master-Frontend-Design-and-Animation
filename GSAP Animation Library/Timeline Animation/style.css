@@ -146,24 +146,66 @@ nav button {
 .elem {
   /* elements will not shrink */
   display: flex;
-  padding: 60px;
-  flex-shrink: 0;   
+  padding: 50px;
+  flex-shrink: 0;
   height: 330px;
   width: 49%;
   border: 3px solid black;
   border-radius: 30px;
-  background-color: darkkhaki;
-  box-shadow:  0px 15px 0px #48b760; /* x y blur color */
+  box-shadow: 0px 15px 0px; /* x y blur color */
   /* margin-bottom: 20px; */
 }
-.elem-part1{
+.elem-part1 {
   height: 100%;
   width: 50%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: column;
-  
+}
+.elem-part1 h2 {
+  font-size: 35px;
+  background-color: #48b760;
+  font-weight: 500;
+  font-family: china;
+  width: 80%;
+  padding: 2px 5px;
+  border-radius: 10px;
 }
 
+.elem-part2 {
+  height: 100%;
+  width: 50%;
+}
+.elem-part2 img {
+  height: 100%;
+  width: 100%;
+}
+.elem-part1 h4 {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 500;
+  gap: 20px;
+}
+.elem-part1 h4 i {
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  font-weight: 900;
+}
 
+.black {
+  background-color: black;
+}
+.black h2 {
+  background-color: white;
+}
+.black h4 {
+  color: white;
+}
+.black i {
+  background-color: white !important;
+  color: black !important;
+}
