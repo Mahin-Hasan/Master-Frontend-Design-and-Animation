@@ -13,7 +13,7 @@ body {
   height: 100%;
   width: 100%;
 }
-section {
+.section1 {
   height: 100%;
   width: 100%;
   position: relative;
@@ -22,7 +22,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 60px 100px;
+  padding: 35px 100px;
 }
 nav h1 {
   font-size: 50px;
@@ -52,10 +52,13 @@ nav button {
 }
 
 #center {
-  height: 80%;
+  height: 70%;
   width: 100%;
   display: flex;
-  padding: 70px 100px; /* padding similar to nav */
+  padding: 60px 100px 60px 100px;
+  /* padding: 70px 100px;  */
+  /* padding similar to nav */
+  position: relative;
 }
 .center-part1 {
   height: 100%;
@@ -92,4 +95,75 @@ nav button {
   position: absolute;
   right: 0;
   height: 100%;
+  object-fit: cover;
 }
+
+.section1bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 120px;
+}
+.section1bottom img {
+  height: 60px;
+}
+
+/* section 2 */
+.section2 {
+  height: 100%;
+}
+.section2 .services {
+  margin-top: 30px;
+  padding: 20px 120px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+}
+.services h3 {
+  background-color: #48b760;
+  font-weight: 500;
+  padding: 5px 10px 3px 10px;
+  border-radius: 5px;
+  font-size: 60px;
+  font-family: china;
+}
+.services p {
+  width: 40%;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.container {
+  height: 86%;
+  width: 100%;
+  padding: 40px 120px;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 50px; */
+  flex-wrap: wrap;
+}
+.elem {
+  /* elements will not shrink */
+  display: flex;
+  padding: 60px;
+  flex-shrink: 0;   
+  height: 330px;
+  width: 49%;
+  border: 3px solid black;
+  border-radius: 30px;
+  background-color: darkkhaki;
+  box-shadow:  0px 15px 0px #48b760; /* x y blur color */
+  /* margin-bottom: 20px; */
+}
+.elem-part1{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  
+}
+
+
