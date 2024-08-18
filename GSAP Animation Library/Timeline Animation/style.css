@@ -13,6 +13,9 @@ body {
   height: 100%;
   width: 100%;
 }
+body {
+  overflow-x: hidden;
+}
 .section1 {
   height: 100%;
   width: 100%;
@@ -51,7 +54,7 @@ nav button {
   gap: 80px;
 }
 
-#center {
+.center {
   height: 70%;
   width: 100%;
   display: flex;
